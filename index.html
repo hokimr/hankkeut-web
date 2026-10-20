@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" />
     <style>
-      html, body { margin: 0; height: 100%; background: #121629; overflow: hidden; touch-action: none; }
+      html, body { margin: 0; height: 100%; background: #121629; overflow: hidden; overscroll-behavior: none; touch-action: none; }
       #game { width: 100%; height: 100%; }
       /* 픽셀 그림: 캔버스가 화면보다 작거나 클 때도 번지지 않게 */
       #game canvas { image-rendering: pixelated; image-rendering: crisp-edges; }
     </style>
-    <script type="module" crossorigin src="./assets/index-BewvQGKx.js"></script>
+    <script type="module">import { createSDK } from "https://h5sdk.onestore.net/lib/v1.1.0/onestore-h5-sdk.min.js"; createSDK();</script>
+    <script type="module" crossorigin src="./assets/index-BcW2YKCK.js"></script>
   </head>
   <body>
     <div id="game"></div>
